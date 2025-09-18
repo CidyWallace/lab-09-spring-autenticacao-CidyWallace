@@ -13,10 +13,20 @@ public class UserDTO {
     private String nome;
     @Email
     private String email;
+    @NotBlank
+    private String senha;
 
     private Photo photo;
 
     public UserDTO(){}
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
 
     public Long getId() {
         return id;
